@@ -66,6 +66,9 @@ a:active {
     &_source {
       font-size: 0.8rem;
     }
+    &_background {
+      background-color: #dff0d8;
+    }
   }
 
   @keyframes shake {

@@ -58,7 +58,10 @@ function App() {
         </div>
       </div>
       <div className="row">
-        <div className="col d-flex justify-content-center" id="timeline">
+        <div
+          className="col d-flex justify-content-center ppc-timeline_background"
+          id="timeline"
+        >
           <TimeLine orbituaries={holidayMessages} />
         </div>
       </div>

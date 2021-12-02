@@ -5,10 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-const buildTimeLineElement = (
-  { author, sourceURL, text, price, date },
-  index
-) => {
+const buildTimeLineElement = ({ sourceURL, text, date }, index) => {
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
