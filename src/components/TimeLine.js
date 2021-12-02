@@ -10,7 +10,7 @@ const buildTimeLineElement = ({ sourceURL, text, date }, index) => {
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
       contentStyle={{ background: "#3cb054", color: "#fff" }}
-      contentArrowStyle={{ borderRight: "7px solid black" }}
+      contentArrowStyle={{ borderRight: "7px solid white" }}
       icon={<img src="../assets/img/christmasTree.png" alt="christmas tree" />}
       iconStyle={{
         background: "#3cb054",
