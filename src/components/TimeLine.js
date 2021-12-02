@@ -12,11 +12,11 @@ const buildTimeLineElement = (
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: "black", color: "#fff" }}
-      contentArrowStyle={{ borderRight: "7px solid  black" }}
-      icon={<img src="../assets/img/skull.png" alt="skull" />}
+      contentStyle={{ background: "#3cb054", color: "#fff" }}
+      contentArrowStyle={{ borderRight: "7px solid black" }}
+      icon={<img src="../assets/img/christmasTree.png" alt="christmas tree" />}
       iconStyle={{
-        background: "black",
+        background: "#3cb054",
         color: "#fff",
         display: "flex",
         padding: "10px",
@@ -25,16 +25,8 @@ const buildTimeLineElement = (
     >
       <div className="row">
         <div className="col">
-          <img src="../assets/img/dollarsign.png" alt="dollar price" />
-          {price}
-        </div>
-        <div className="col">
           <img src="../assets/img/calendar.png" alt="calendar" />
           <span className="ml-0 ml-sm-2">{date}</span>
-        </div>
-        <div className="col">
-          <img src="../assets/img/writer.png" alt="author" />
-          <span className="ml-0 ml-sm-2">{author}</span>
         </div>
       </div>
       <div className="row mt-3">

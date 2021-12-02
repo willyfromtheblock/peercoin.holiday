@@ -1,5 +1,4 @@
-// $background-color: #3cb054;
-$background-color: black;
+$background-color: #3cb054;
 $text-color: white;
 
 html {
@@ -34,11 +33,6 @@ a:active {
 .ppc {
   &-background {
     background-color: $background-color;
-    background-image: linear-gradient(
-      to top,
-      $background-color 0%,
-      darkgrey 100%
-    );
     &__timeLine {
       background-color: $background-color;
     }
@@ -54,7 +48,7 @@ a:active {
       right: 10px;
     }
   }
-  &-tombstone {
+  &-santa {
     animation: shake 0.8s;
     &:hover {
       animation: shake 0.8s infinite;

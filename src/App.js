@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import CountUp from "react-countup";
 import TimeLine from "./components/TimeLine";
 import Footer from "./components/Footer";
-import orbituaries from "./data/death_certificates.json";
+import holidayMessages from "./data/death_certificates.json";
 
 function App() {
   return (
@@ -29,42 +29,24 @@ function App() {
             <div className="row justify-content-center mt-3 mt-md-5 mb-3 mb-md-5 pb-3">
               <span>
                 <img
-                  className="ppc-tombstone"
-                  src="assets/img/tombstone.png"
-                  alt="tombstone"
+                  className="ppc-santa"
+                  src="assets/img/santa.png"
+                  alt="santa"
                 />
               </span>
             </div>
             <div className="row justify-content-center">
               <div className="col-auto">
                 <h4 className="m0">
-                  <span className="mr-2">
-                    <img src="assets/img/reaper.png" width="40px" alt="reaper icon" />
-                  </span>
-                  <strong>Declared dead</strong>
+                  <strong>Holiday wishes</strong>
                 </h4>
               </div>
             </div>
             <div className="row pt-3 pb-3 justify-content-center">
               <div className="col-auto">
                 <h2 className="m0">
-                  <CountUp end={orbituaries.length} /> times
+                  <CountUp end={holidayMessages.length} />
                 </h2>
-              </div>
-            </div>
-            <div className="row mt-5 justify-content-center">
-              <div className="col-auto">
-                <h4 className="m0">
-                  <span className="mr-2">
-                    <img src="assets/img/frankenstein.png" width="40px" alt="zombie icon" />
-                  </span>
-                  <strong>Undead since</strong>
-                </h4>
-              </div>
-            </div>
-            <div className="row pt-3 justify-content-center">
-              <div className="col-auto">
-                <h2 className="m0">7th of July 2012</h2>
               </div>
             </div>
             <div className="ppc-arrow_down d-none d-lg-block d-xl-block">
@@ -77,7 +59,7 @@ function App() {
       </div>
       <div className="row">
         <div className="col d-flex justify-content-center" id="timeline">
-          <TimeLine orbituaries={orbituaries} />
+          <TimeLine orbituaries={holidayMessages} />
         </div>
       </div>
       <Footer />
