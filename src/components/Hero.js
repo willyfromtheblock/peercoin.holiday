@@ -59,7 +59,11 @@ function Hero({ holidayMessagesLength }) {
                     }
                     style={{ cursor: "pointer" }}
                   >
-                    <img src="/assets/img/copy_icon.svg" height="18px" />
+                    <img
+                      src="/assets/img/copy_icon.svg"
+                      height="18px"
+                      alt="copy to clipboard"
+                    />
                   </span>
                 </div>
               </div>
