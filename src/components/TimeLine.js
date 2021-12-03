@@ -6,7 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 const buildTimeLineElement = ({ transactionId, text, date }, index) => {
-  var myDate = date > 0 ? new Date(date * 1000) : new Date();
+  var myDate = new Date(date * 1000);
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
