@@ -12,12 +12,13 @@ const buildTimeLineElement = ({ transactionId, text, date }, index) => {
       className="vertical-timeline-element--work"
       contentStyle={{ background: "#3cb054", color: "#fff" }}
       contentArrowStyle={{ borderRight: "7px solid white" }}
-      icon={<img src="../assets/img/christmasTree.png" alt="christmas tree" />}
+      icon={<img src="../assets/img/xmas_tree.svg" alt="christmas tree" />}
       iconStyle={{
         background: "#3cb054",
         color: "#fff",
         display: "flex",
-        padding: "10px",
+        padding: "0.4rem",
+        justifyContent: "center",
       }}
       key={index}
     >

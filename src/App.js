@@ -59,7 +59,7 @@ function App() {
           let old = holidayMessages;
           old.push({
             date:
-              answer["result"]["time"] == 0
+              answer["result"]["time"] === 0
                 ? new Date() / 1000
                 : answer["result"]["time"],
             transactionId: answer["result"]["txid"],

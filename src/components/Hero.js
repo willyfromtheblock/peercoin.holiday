@@ -7,11 +7,11 @@ function Hero({ holidayMessagesLength }) {
       <div className="col-12 d-flex flex-column ppc-background justify-content-center align-items-center">
         <div className="container-fluid">
           <div className="row justify-content-center">
-            <div className="col-9 col-sm-6 col-md-5 col-lg-4 col-xl-3 mt-3">
+            <div className="col-9 col-sm-6 col-md-5 col-lg-4 col-xl-3 mt-4">
               <a href="https://ppc.lol/dotnet" target="_blank" rel="noreferrer">
                 <img
                   className="img-fluid ppc-logo"
-                  src="assets/img/peercoin.svg"
+                  src="assets/img/logo_peer.svg"
                   alt="peercoin logo"
                 />
               </a>
@@ -21,7 +21,8 @@ function Hero({ holidayMessagesLength }) {
             <span>
               <img
                 className="ppc-santa"
-                src="assets/img/santa.png"
+                src="assets/img/santa.svg"
+                width="90px"
                 alt="santa"
               />
             </span>
@@ -38,16 +39,44 @@ function Hero({ holidayMessagesLength }) {
                 our mobile app. <br />
                 <br />
                 Simply send <strong>0 PPC</strong> and your message to
-                <br />
-                <a
-                  href="https://blockbook.peercoin.net/address/P9kBPRzriDA6rLRrzXgsR9qtnygELu7dLF"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <strong> PRS1nBeyB9FVGaFhpL7BG5ruuaNNrehBVA</strong>
-                </a>
-                <br />
               </p>
+              <div className="row justify-content-center">
+                <div className="col-auto">
+                  <a
+                    href="https://blockbook.peercoin.net/address/P9kBPRzriDA6rLRrzXgsR9qtnygELu7dLF"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <strong> PRS1nBeyB9FVGaFhpL7BG5ruuaNNrehBVA</strong>
+                  </a>
+                </div>
+                <div>
+                  <span
+                    onClick={() =>
+                      navigator.clipboard.writeText(
+                        "PRS1nBeyB9FVGaFhpL7BG5ruuaNNrehBVA"
+                      )
+                    }
+                    style={{ cursor: "pointer" }}
+                  >
+                    <img src="/assets/img/copy_icon.svg" height="18px" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row justify-content-center mt-5">
+            <div className="col-auto">
+              <div className="m0 ppc-wishes">
+                <strong>Holiday wishes received</strong>
+              </div>
+            </div>
+          </div>
+          <div className="row pt-3 pb-3 justify-content-center">
+            <div className="col-auto">
+              <div className="m0 ppc-wishes">
+                <CountUp end={holidayMessagesLength} />
+              </div>
             </div>
           </div>
           <div className="row justify-content-center align-items-center mt-md-3">
@@ -78,23 +107,9 @@ function Hero({ holidayMessagesLength }) {
               </a>
             </div>
           </div>
-          <div className="row justify-content-center mt-5">
-            <div className="col-auto">
-              <h4 className="m0">
-                <strong>Holiday wishes received</strong>
-              </h4>
-            </div>
-          </div>
-          <div className="row pt-3 pb-3 justify-content-center">
-            <div className="col-auto">
-              <h2 className="m0">
-                <CountUp end={holidayMessagesLength} />
-              </h2>
-            </div>
-          </div>
           <div className="ppc-arrow_down d-none d-lg-block d-xl-block">
             <a href="#timeline">
-              <img src="assets/img/arrowDown.png" alt="arrow down" />
+              <img src="assets/img/arrow_down.svg" alt="arrow down" />
             </a>
           </div>
         </div>
