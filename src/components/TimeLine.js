@@ -23,7 +23,7 @@ const buildTimeLineElement = ({ sourceURL, text, date }, index) => {
       <div className="row">
         <div className="col">
           <img src="../assets/img/calendar.png" alt="calendar" />
-          <span className="ml-0 ml-sm-2">{date}</span>
+          <span className="ml-0 ml-2">{date}</span>
         </div>
       </div>
       <div className="row mt-3">
@@ -54,19 +54,28 @@ export default function TimeLine({ orbituaries }) {
   orbituaries.sort(custom_sort);
 
   return (
-    <VerticalTimeline>
-      {orbituaries.map((entry, index) => {
-        return buildTimeLineElement(entry, index);
-      })}
-      <VerticalTimelineElement
-        iconStyle={{
-          background: "#3cb054",
-          color: "#fff",
-          display: "flex",
-          padding: "13px",
-        }}
-        icon={<img src="../assets/img/peercoin-leaf.svg" alt="peercoin leaf" />}
-      />
-    </VerticalTimeline>
+    <div className="row">
+      <div
+        className="col d-flex justify-content-center ppc-timeline_background"
+        id="timeline"
+      >
+        <VerticalTimeline>
+          {orbituaries.map((entry, index) => {
+            return buildTimeLineElement(entry, index);
+          })}
+          <VerticalTimelineElement
+            iconStyle={{
+              background: "#3cb054",
+              color: "#fff",
+              display: "flex",
+              padding: "13px",
+            }}
+            icon={
+              <img src="../assets/img/peercoin-leaf.svg" alt="peercoin leaf" />
+            }
+          />
+        </VerticalTimeline>
+      </div>
+    </div>
   );
 }
