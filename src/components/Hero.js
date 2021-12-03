@@ -39,7 +39,13 @@ function Hero({ holidayMessages }) {
                 <br />
                 Simply send <strong>0.01 PPC</strong> and your message to
                 <br />
-                <strong> PRS1nBeyB9FVGaFhpL7BG5ruuaNNrehBVA</strong>
+                <a
+                  href="https://blockbook.peercoin.net/address/P9kBPRzriDA6rLRrzXgsR9qtnygELu7dLF"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <strong> PRS1nBeyB9FVGaFhpL7BG5ruuaNNrehBVA</strong>
+                </a>
                 <br />
               </p>
             </div>
