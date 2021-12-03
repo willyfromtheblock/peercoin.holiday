@@ -47,11 +47,11 @@ const buildTimeLineElement = ({ sourceURL, text, date }, index) => {
   );
 };
 
-export default function TimeLine({ orbituaries }) {
+export default function TimeLine({ holidayMessages }) {
   function custom_sort(a, b) {
     return new Date(b.date).getTime() - new Date(a.date).getTime();
   }
-  orbituaries.sort(custom_sort);
+  holidayMessages.sort(custom_sort);
 
   return (
     <div className="row">
@@ -60,7 +60,7 @@ export default function TimeLine({ orbituaries }) {
         id="timeline"
       >
         <VerticalTimeline>
-          {orbituaries.map((entry, index) => {
+          {holidayMessages.map((entry, index) => {
             return buildTimeLineElement(entry, index);
           })}
           <VerticalTimelineElement

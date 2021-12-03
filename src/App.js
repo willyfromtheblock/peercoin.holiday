@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="container-fluid overflow-hidden">
       <Hero holidayMessages={holidayMessages} />
-      <TimeLine orbituaries={holidayMessages} />
+      <TimeLine holidayMessages={holidayMessages} />
       <Footer />
     </div>
   );
