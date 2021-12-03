@@ -1,7 +1,7 @@
 import React from "react";
 import CountUp from "react-countup";
 
-function Hero({ holidayMessages }) {
+function Hero({ holidayMessagesLength }) {
   return (
     <div className="row ppc-hero">
       <div className="col-12 d-flex flex-column ppc-background justify-content-center align-items-center">
@@ -88,7 +88,7 @@ function Hero({ holidayMessages }) {
           <div className="row pt-3 pb-3 justify-content-center">
             <div className="col-auto">
               <h2 className="m0">
-                <CountUp end={holidayMessages.length} />
+                <CountUp end={holidayMessagesLength} />
               </h2>
             </div>
           </div>

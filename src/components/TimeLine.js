@@ -5,7 +5,8 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-const buildTimeLineElement = ({ sourceURL, text, date }, index) => {
+const buildTimeLineElement = ({ transactionId, text, date }, index) => {
+  var myDate = date > 0 ? new Date(date * 1000) : new Date();
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
@@ -21,9 +22,11 @@ const buildTimeLineElement = ({ sourceURL, text, date }, index) => {
       key={index}
     >
       <div className="row">
-        <div className="col">
+        <div className="col-1">
           <img src="../assets/img/calendar.png" alt="calendar" />
-          <span className="ml-0 ml-2">{date}</span>
+        </div>
+        <div className="col-auto">
+          <div>{myDate.toLocaleString("en-GB", { timeZone: "UTC" })}</div>
         </div>
       </div>
       <div className="row mt-3">
@@ -34,12 +37,12 @@ const buildTimeLineElement = ({ sourceURL, text, date }, index) => {
       <div className="row mt-2">
         <div className="col">
           <a
-            href={sourceURL}
+            href={"https://blockbook.peercoin.net/tx/" + transactionId}
             target="_blank"
             rel="noreferrer"
             className="ppc-timeline_source"
           >
-            Source
+            Transaction
           </a>
         </div>
       </div>
@@ -48,10 +51,7 @@ const buildTimeLineElement = ({ sourceURL, text, date }, index) => {
 };
 
 export default function TimeLine({ holidayMessages }) {
-  function custom_sort(a, b) {
-    return new Date(b.date).getTime() - new Date(a.date).getTime();
-  }
-  holidayMessages.sort(custom_sort);
+  if (holidayMessages.length === 0) return <div></div>;
 
   return (
     <div className="row">
