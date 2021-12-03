@@ -82,10 +82,11 @@ h1 {
   &-wishes {
     font-family: "Smooch", sans-serif !important;
     font-size: 2rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+
     @media (min-width: 576px) {
       font-size: 3.5rem;
-      letter-spacing: 0.1rem;
     }
     @media (min-width: 992px) {
       letter-spacing: 0.4rem;
