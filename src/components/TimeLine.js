@@ -54,7 +54,7 @@ export default function TimeLine({ holidayMessages }) {
   if (holidayMessages.length === 0) return <div></div>;
 
   holidayMessages.sort(function (x, y) {
-    return y.timestamp - x.timestamp;
+    return y.date - x.date;
   });
 
   return (
