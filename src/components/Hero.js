@@ -37,7 +37,7 @@ function Hero({ holidayMessagesLength }) {
                 Send this years holiday wishes with the new Metadata feature of
                 our mobile app. <br />
                 <br />
-                Simply send <strong>0.01 PPC</strong> and your message to
+                Simply send <strong>0 PPC</strong> and your message to
                 <br />
                 <a
                   href="https://blockbook.peercoin.net/address/P9kBPRzriDA6rLRrzXgsR9qtnygELu7dLF"
