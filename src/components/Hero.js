@@ -39,7 +39,7 @@ function Hero({ holidayMessages }) {
                 <br />
                 Simply send <strong>0.01 PPC</strong> and your message to
                 <br />
-                <strong> P9kBPRzriDA6rLRrzXgsR9qtnygELu7dLF</strong>
+                <strong> PRS1nBeyB9FVGaFhpL7BG5ruuaNNrehBVA</strong>
                 <br />
               </p>
             </div>
