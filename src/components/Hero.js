@@ -29,14 +29,15 @@ function Hero({ holidayMessagesLength }) {
           </div>
           <div className="row justify-content-center">
             <div className="col-auto">
-              <h1> This year, we have something special for you.</h1>
+              <h1> Happy Holidays from Peercoin!</h1>
             </div>
           </div>
           <div className="row justify-content-center mt-sm-3 mt-md-5">
             <div className="col-auto">
               <p className="ppc-paragraph">
-                Send this years holiday wishes with the new Metadata feature of
-                our mobile app. <br />
+                Record your holiday wishes on the blockchain with Peercoin’s
+                mobile app. <br />
+                All messages will appear below.
                 <br />
                 Simply send <strong>0 PPC</strong> and your message to
               </p>
