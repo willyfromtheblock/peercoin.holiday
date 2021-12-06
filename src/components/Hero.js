@@ -44,7 +44,7 @@ function Hero({ holidayMessagesTotal }) {
               <div className="row justify-content-center">
                 <div className="col-auto">
                   <a
-                    href="https://blockbook.peercoin.net/address/P9kBPRzriDA6rLRrzXgsR9qtnygELu7dLF"
+                    href="https://blockbook.peercoin.net/address/PRS1nBeyB9FVGaFhpL7BG5ruuaNNrehBVA"
                     target="_blank"
                     rel="noreferrer"
                   >
