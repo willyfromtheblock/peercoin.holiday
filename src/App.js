@@ -16,7 +16,8 @@ function App() {
   useEffect(() => {
     fetch('https://core.peercoin.holiday/total')
       .then(response => response.json())
-      .then(data => setMessagesAvailable(data));
+      .then(data => setMessagesAvailable(data))
+      .then(fetchMessages(0));
   }, []);
 
   const fetchMessages = async scroll => {
@@ -24,6 +25,8 @@ function App() {
       .then(response => response.json())
       .then(data => {
         const mergedData = holidayMessages.concat(data);
+        console.log(holidayMessages);
+        console.log(mergedData);
         setHolidayMessages(mergedData)
       });
 
@@ -42,15 +45,16 @@ function App() {
   return (
     <div className="container-fluid overflow-hidden">
       <Hero holidayMessagesTotal={parseInt(messagesAvailable)} />
-      <InfiniteScroll
-        pageStart={0}
-        loadMore={() => loadMore()}
-        hasMore={hasMore}
-        threshold={500}
-        loader={<Loader key={"spinner"} />}
-      >
-        <TimeLine holidayMessages={holidayMessages} />
-      </InfiniteScroll>
+      {holidayMessages.length > 0 &&
+        <InfiniteScroll
+          pageStart={0}
+          loadMore={() => loadMore()}
+          hasMore={hasMore}
+          threshold={500}
+          loader={<Loader key={"spinner"} />}
+        >
+          <TimeLine holidayMessages={holidayMessages} />
+        </InfiniteScroll>}
       <Footer />
     </div>
   );
