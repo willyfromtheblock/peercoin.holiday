@@ -25,8 +25,6 @@ function App() {
       .then(response => response.json())
       .then(data => {
         const mergedData = holidayMessages.concat(data);
-        console.log(holidayMessages);
-        console.log(mergedData);
         setHolidayMessages(mergedData)
       });
 
