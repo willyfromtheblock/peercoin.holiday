@@ -1,32 +1,13 @@
 import React from "react";
 import CountUp from "react-countup";
+import LogoAndSanta from "./common/LogoAndSanta";
 
 function Hero({ holidayMessagesTotal }) {
   return (
     <div className="row ppc-hero">
       <div className="col-12 d-flex flex-column ppc-background justify-content-center align-items-center">
         <div className="container-fluid">
-          <div className="row justify-content-center">
-            <div className="col-9 col-sm-6 col-md-5 col-lg-4 col-xl-3 mt-4">
-              <a href="https://ppc.lol/dotnet" target="_blank" rel="noreferrer">
-                <img
-                  className="img-fluid ppc-logo"
-                  src="assets/img/logo_peer.svg"
-                  alt="peercoin logo"
-                />
-              </a>
-            </div>
-          </div>
-          <div className="row justify-content-center mt-5 mb-3 mb-md-5 pb-3">
-            <span>
-              <img
-                className="ppc-santa"
-                src="assets/img/santa.svg"
-                width="90px"
-                alt="santa"
-              />
-            </span>
-          </div>
+          <LogoAndSanta />
           <div className="row justify-content-center">
             <div className="col-auto">
               <h1> Happy Holidays from Peercoin!</h1>
@@ -114,7 +95,7 @@ function Hero({ holidayMessagesTotal }) {
           </div>
           <div className="ppc-arrow_down d-none d-lg-block d-xl-block">
             <a href="#timeline">
-              <img src="assets/img/arrow_down.svg" alt="arrow down" />
+              <img src="/assets/img/arrow_down.svg" alt="arrow down" />
             </a>
           </div>
         </div>

@@ -28,7 +28,7 @@ function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          <img src="assets/img/github.png" alt="github icon" />
+          <img src="/assets/img/github.png" alt="github icon" />
         </a>
       </div>
     </div>
