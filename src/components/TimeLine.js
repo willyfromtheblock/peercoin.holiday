@@ -36,7 +36,7 @@ const buildTimeLineElement = ({ transactionId, text, date }, index) => {
         </div>
       </div>
       <div className="row mt-2">
-        <div className="col">
+        <div className="col-auto">
           <a
             href={"https://blockbook.peercoin.net/tx/" + transactionId}
             target="_blank"
@@ -45,6 +45,17 @@ const buildTimeLineElement = ({ transactionId, text, date }, index) => {
           >
             Transaction
           </a>
+        </div>
+        <div className="col-auto">
+          <a
+            href={"https://peercoin.holiday/card/" + transactionId}
+            target="_blank"
+            rel="noreferrer"
+            className="ppc-timeline_source"
+          >
+            Share
+          </a>
+
         </div>
       </div>
     </VerticalTimelineElement>
