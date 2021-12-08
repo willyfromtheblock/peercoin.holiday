@@ -4,6 +4,9 @@ function SingleCard(cardMessage) {
     const { date, text, transactionId } = cardMessage["card"];
     var myDate = new Date(date * 1000);
     return <div className="ppc-card" >
+        <div className="ppc-card_icon">
+            <img src="../assets/img/xmas_tree.svg" alt="christmas tree" />
+        </div>
         <div className="row">
             <div className="col-1">
                 <img src="../assets/img/calendar.png" alt="calendar" />
