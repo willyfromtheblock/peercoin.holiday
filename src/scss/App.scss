@@ -1,4 +1,5 @@
 $background-color: #3cb054;
+$accent-color: #dff0d8;
 $text-color: white;
 
 @font-face {
@@ -93,6 +94,29 @@ h1 {
     }
   }
 
+  &-card {
+    padding: 3rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    max-width: 80%;
+
+    @media (min-width: 576px) {
+      max-width: 70%;
+    }
+
+    @media (min-width: 992px) {
+      max-width: 60%;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 50%;
+    }
+
+    &_error {
+      color: rgb(158, 22, 22);
+    }
+  }
+
   &-santa {
     animation: shake 0.8s;
     &:hover {
@@ -127,7 +151,7 @@ h1 {
       font-size: 0.8rem;
     }
     &_background {
-      background-color: #dff0d8;
+      background-color: $accent-color;
     }
   }
 
@@ -181,10 +205,10 @@ h1 {
   width: 51px;
   height: 51px;
   margin: 6px;
-  border: 6px solid rgb(60, 176, 84);
+  border: 6px solid $accent-color;
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: rgb(60, 176, 84) transparent transparent transparent;
+  border-color: $accent-color transparent transparent transparent;
 }
 .lds-ring div:nth-child(1) {
   animation-delay: -0.45s;

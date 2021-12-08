@@ -7,7 +7,7 @@ function Hero({ holidayMessagesTotal }) {
     <div className="row ppc-hero">
       <div className="col-12 d-flex flex-column ppc-background justify-content-center align-items-center">
         <div className="container-fluid">
-          <LogoAndSanta />
+          <LogoAndSanta isCard={false} />
           <div className="row justify-content-center">
             <div className="col-auto">
               <h1> Happy Holidays from Peercoin!</h1>

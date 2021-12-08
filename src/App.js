@@ -3,12 +3,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./components/Footer";
 import React from "react";
 import MessageBoard from "./components/MessageBoard";
+import MessageCard from "./components/MessageCard";
 
 function App() {
-  console.log(window.location.pathname.split('/'));
+
   return (
     <div className="container-fluid overflow-hidden">
-      <MessageBoard />
+      {window.location.pathname.split('/')[1] === "card" ? <MessageCard /> :
+        <MessageBoard />}
       <Footer />
     </div>
   );
