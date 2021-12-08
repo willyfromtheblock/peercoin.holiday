@@ -3,8 +3,16 @@ import React from "react";
 function Footer() {
   return (
     <div className="row ppc-background p-2 justify-content-center">
-      <div className="col-auto d-flex align-items-center">
+      <div className="col-auto d-flex align-items-center text-center">
         Donations: PM7jjBUPjzpkZy1UZtD7mvmHoXJ2BGvbx9
+      </div>
+      <div className="col-auto d-flex align-items-center">
+        <span>
+          <a href="      https://ppc.lol/howHolidayWorks
+" target="_blank" rel="noreferrer">
+            How it works
+          </a>
+        </span>
       </div>
       <div className="col-auto d-flex align-items-center">
         <span>
