@@ -31,13 +31,13 @@ function MessageCard() {
             </div>
             <div className="row justify-content-center">
                 <div className="col-auto">
-                    <div className="m0 ppc-wishes mb-5">
+                    <div className="m0 ppc-wishes mb-3">
                         <strong>Holiday wishes</strong>
                     </div>
                 </div>
             </div>
             {isLoading === false ?
-                <div className="row justify-content-center">
+                <div className="row justify-content-center mt-3">
                     {cardMessage["date"] != null ?
                         <SingleCard card={cardMessage} /> :
                         <div className="ppc-card_error"><h3>Error: Message Not found</h3></div>}
