@@ -99,18 +99,20 @@ h1 {
     position: relative;
     border: 2px solid white;
     border-radius: 5px;
-    max-width: 80%;
+    max-width: 80vw;
 
     @media (min-width: 576px) {
-      max-width: 70%;
+      max-width: 70vw;
     }
 
     @media (min-width: 992px) {
-      max-width: 60%;
+      max-width: 60vw;
+      min-width: 50vw;
     }
 
     @media (min-width: 1200px) {
-      max-width: 50%;
+      max-width: 50vw;
+      min-width: 40vw;
     }
 
     &_error {
