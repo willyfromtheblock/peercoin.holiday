@@ -15,7 +15,7 @@ function SingleCard(cardMessage) {
                 <div>{myDate.toLocaleString("en-GB", { timeZone: "UTC" })}</div>
             </div>
         </div>
-        <div className="row mt-5">
+        <div className="row mt-3">
             <div className="col">
                 <span className="ppc-timeline_text">&laquo; {text} &raquo;</span>
             </div>
