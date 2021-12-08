@@ -18,6 +18,7 @@ function App() {
       .then(response => response.json())
       .then(data => setMessagesAvailable(data))
       .then(fetchMessages(0));
+    // eslint-disable-next-line
   }, []);
 
   const fetchMessages = async scroll => {
