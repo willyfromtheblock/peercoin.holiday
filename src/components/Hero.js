@@ -66,7 +66,7 @@ function Hero({ holidayMessagesTotal }) {
             </div>
           </div>
           <div className="row justify-content-center align-items-center mt-md-3">
-            <div className="col-6-auto">
+            <div className="col-4-auto">
               <a
                 href="https://play.google.com/store/apps/details?id=com.coinerella.peercoin"
                 target="_blank"
@@ -79,7 +79,7 @@ function Hero({ holidayMessagesTotal }) {
                 />
               </a>
             </div>
-            <div className="col-6-auto">
+            <div className="col-4-auto">
               <a
                 href="https://apps.apple.com/us/app/peercoin-wallet/id1571755170?itsct=apps_box_badge&amp;itscg=30200"
                 target="_blank"
@@ -90,6 +90,15 @@ function Hero({ holidayMessagesTotal }) {
                   alt="Download on the App Store"
                   height="55"
                 />
+              </a>
+            </div>
+            <div className="col-4-auto text-center ml-3 ppc-buy">
+              <a
+                href="https://buy.peercoin.net"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="/assets/img/shopping-cart.png" alt="shopping cart" width={30} /><strong> Get Peercoin</strong>
               </a>
             </div>
           </div>
